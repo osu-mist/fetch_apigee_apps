@@ -4,7 +4,7 @@ import time
 
 import requests
 
-credentials = tuple(os.environ['CREDENTIALS'].split(':'))
+credentials = tuple(sys.argv[1].split(':'))
 
 apigee_base_url = 'https://api.enterprise.apigee.com/v1/organizations/oregonstateuniversity'
 apigee_apps_url = f'{apigee_base_url}/apps?expand=true'
